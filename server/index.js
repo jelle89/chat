@@ -42,7 +42,7 @@ function onMessage(request, response) {
 }
 app.post('/message', onMessage)
 
-port = 5000
+const port = process.env.PORT || 5000
 
 function onListen () {
     console.log(`Listening on :${port}`)
